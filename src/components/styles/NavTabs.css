@@ -1,0 +1,18 @@
+.header {
+    background: rgb(10, 42, 71);
+    height: 50px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    padding-top: 75px;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+  }
+
+  .nav-item{
+ 
+    color: white;
+  }
+  
