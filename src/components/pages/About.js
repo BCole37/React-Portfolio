@@ -1,9 +1,13 @@
 import React from 'react';
+import '../styles/Portfolio.css';
 
 export default function About() {
   return (
     <div>
       <h1>About Me</h1>
+      <div>
+      <section class="backgroundImage" alt= "A picture of my wife and I when I proposed"></section>
+      </div>
       <p>
       Hi, I'm Bryson Cole.
       Thank you for visting my React Portfolio. I have been a junior devloper at Intuli LLc. for four years and a developer for the past year.

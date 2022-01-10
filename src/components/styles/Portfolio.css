@@ -15,8 +15,8 @@
 /*sets the background image and then the size  */
 
 .Work-Section-1{
-    height: 100%;
-    width: 100%;
+    height: 75%;
+    width: 91.5%;
     margin-bottom: 25px;
     background-image: url("../images/Code-Refractor.jpg");
     background-size: 100%;
@@ -30,7 +30,7 @@
 
 
 .Work-Section-2{
-    height: 85%;
+    height: 58%;
     width: 45%;
     margin-bottom: 25px;
     margin: 10px;
@@ -42,7 +42,7 @@
 }
 
 .Work-Section-3{
-    height: 85%;
+    height: 58%;
     width: 45%;
     margin-bottom: 25px;
     margin: 10px;
@@ -54,7 +54,7 @@
 
 }
 .Work-Section-4{
-    height: 85%;
+    height: 58%;
     width: 45%;
     margin-bottom: 25px;
     margin: 10px;
@@ -66,7 +66,7 @@
 
 }
 .Work-Section-5{
-    height: 85%;
+    height: 58%;
     width: 45%;
     margin-bottom: 25px;
     margin: 10px;
@@ -78,7 +78,7 @@
 
 }
 .Work-Section-6{
-    height: 85%;
+    height: 58%;
     width: 45%;
     margin-bottom: 25px;
     margin: 10px;
@@ -100,7 +100,7 @@
     height: 20%;
     font-size: 24px;
     border: 2px solid white;
-    transform: scale(1) translate(-0%, 350%);
+    transform: scale(1) translate(-0%, 358%);
     color: white;
 }
 .bottom-left-small {
@@ -111,7 +111,7 @@
     height: 20%;
     font-size: 11px;
     border: 2px solid white;
-    transform: scale(1) translate(-0%, 350%);
+    transform: scale(1) translate(-0%, 358%);
     color: white;
 }
 

@@ -1,0 +1,9 @@
+.backgroundImage {
+    height: 25%;
+    width: 25%;
+    margin-bottom: 25px;
+    background-image: url("../images/image-of-me.jpg");
+    background-size: 400px;
+    background-position: center;
+    margin-left: 35%;
+}

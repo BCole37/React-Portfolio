@@ -8,6 +8,7 @@ function NavTabs({ currentPage, handlePageChange }) {
 
 
   return (
+    <div> 
     <header className="header">
 
     <ul className="nav nav-tabs">
@@ -64,6 +65,7 @@ function NavTabs({ currentPage, handlePageChange }) {
     </ul>
     </header>
 
+        </div>
   );
 }
 
