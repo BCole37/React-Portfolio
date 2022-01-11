@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.0de1b3e6.css",
+    "main.js": "/React-Portfolio/static/js/main.47a46f61.js",
+    "static/media/MusicTrivia.PNG": "/React-Portfolio/static/media/MusicTrivia.0ac0366bdaf82f4a0c88.PNG",
+    "static/media/Code-Refractor.jpg": "/React-Portfolio/static/media/Code-Refractor.ec6f761f355f98521914.jpg",
+    "static/media/Weather.PNG": "/React-Portfolio/static/media/Weather.8a54c23d829fa7ba389f.PNG",
+    "static/media/Work.PNG": "/React-Portfolio/static/media/Work.6ba67d9941cf52d59b20.PNG",
+    "static/media/Password.PNG": "/React-Portfolio/static/media/Password.94dfedfb538f55187c96.PNG",
+    "static/media/NoteTaker.PNG": "/React-Portfolio/static/media/NoteTaker.0c1f1959abd6e1d1cee3.PNG",
+    "index.html": "/React-Portfolio/index.html",
+    "main.0de1b3e6.css.map": "/React-Portfolio/static/css/main.0de1b3e6.css.map",
+    "main.47a46f61.js.map": "/React-Portfolio/static/js/main.47a46f61.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0de1b3e6.css",
+    "static/js/main.47a46f61.js"
+  ]
+}
