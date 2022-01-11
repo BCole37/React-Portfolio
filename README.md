@@ -27,4 +27,4 @@ Classmate Tim
 # Link
 [Link to the Repo](https://github.com/BCole37/React-Portfolio)
 
-[Link to the heroku app](https://limitless-dusk-74294.herokuapp.com/)
+[Link to the page](https://bcole37.github.io/React-Portfolio/)
