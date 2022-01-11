@@ -1,56 +1,69 @@
 import React, { useState } from 'react';
-//import React from 'react';
+import '../styles/Contact.css';
 
-function Contact() {
-  // Here we set two state variables for firstName and lastName using `useState`
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
+const Contact = () => {
+    const [formState, setFormState] = useState({Name: '',Email: '', Message: '', });
 
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
+    const [error, setError] = useState('');
 
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'firstName' ? setFirstName(value) : setLastName(value);
-  };
+    const handleInputChange = (event) => {;
+        const { name, value } = event.target;
+        const emailcheck = new RegExp(/@/);
 
-  const handleFormSubmit = (e) => {
-    // Preventing the default behavior of the form submit (which is to refresh the page)
-    e.preventDefault();
+        setFormState({
+            ...formState,
+            [name]: value,
+        });
 
-    // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${firstName} ${lastName}`);
-    setFirstName('');
-    setLastName('');
-  };
+        if (!value) {
+            return setError(`${name} field cannot be empty`);
+        } else {
+            setError('');
+        }
 
-  return (
-    <div>
-      <p>
-        Hello {firstName} {lastName}
-      </p>
-      <form className="form">
-        <input
-          value={firstName}
-          name="firstName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="First Name"
-        />
-        <input
-          value={lastName}
-          name="lastName"
-          onChange={handleInputChange}
-          type="text"
-          placeholder="Last Name"
-        />
-        <button type="button" onClick={handleFormSubmit}>
-          Submit
-        </button>
-      </form>
-    </div>
-  );
+        if (name === 'Email' && !emailcheck.test(formState.Email)) {
+            setError('Please enter a valid email address.');
+        } else {
+            setError('');
+        }
+    };
+
+    const handleFormSubmit = async (event) => {
+        event.preventDefault();
+        console.log(formState);
+    };
+
+    return (
+        <div className="contact-form">
+            <form className="form">
+                <input
+                    value={formState.Name}
+                    name="Name"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Name"
+                />
+                <input
+                    value={formState.Email}
+                    name="Email"
+                    onChange={handleInputChange}
+                    type="email"
+                    placeholder="Email"
+                />
+                <textarea
+                    value={formState.Message}
+                    name="Message"
+                    onChange={handleInputChange}
+                    type="text"
+                    placeholder="Message"
+                />
+                <button type="button" onClick={handleFormSubmit}>
+                    Submit
+                </button>
+            </form>
+            {error && <span>{error}</span>}
+        </div>
+    )
 }
 
-export default Contact;
-
+export default Contact
